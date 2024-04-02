@@ -131,7 +131,7 @@ const Navbar = () => {
           >
             talk to us
           </Link>
-          {/* <ThemeChanger /> */}
+          <ThemeChanger />
         </div>
       </nav>
     </div>

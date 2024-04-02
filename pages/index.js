@@ -13,6 +13,7 @@ import Cta from "../components/cta";
 import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
 import HeroOne from "../components/HeroOne";
+import Scroller from "../components/Scroller";
 const Home = () => {
   return (
     <>
@@ -42,6 +43,7 @@ const Home = () => {
         title="Learn how Innovatex Technology can fulfill your needs">
         This section is to highlight a promo or demo video of your product. Analysts say a landing page with video has 3% more conversion rate. So, don't forget to add one. Just like this.
       </SectionTitle>
+      <Scroller/>
       <Video />
       <SectionTitle
         pretitle="Testimonials"
