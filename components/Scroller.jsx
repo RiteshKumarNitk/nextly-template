@@ -5,18 +5,18 @@ import { useRef } from "react";
 const Scroller = () => {
   return (
     <div>
-        <div className="bg-neutral-800">
-      <div className="flex h-48 items-center justify-center">
+        <div className="bg-neutral-200 dark:bg-neutral-800">
+      {/* <div className="flex h-48 items-center justify-center">
         <span className="font-semibold uppercase text-neutral-500">
           Scroll down
         </span>
-      </div>
+      </div> */}
       <HorizontalScrollCarousel />
-      <div className="flex h-48 items-center justify-center">
+      {/* <div className="flex h-48 items-center justify-center">
         <span className="font-semibold uppercase text-neutral-500">
           Scroll up
         </span>
-      </div>
+      </div> */}
     </div>
     </div>
   )
@@ -27,10 +27,10 @@ const HorizontalScrollCarousel = () => {
       target: targetRef,
     });
   
-    const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
+    const x = useTransform(scrollYProgress, [0, 1], ["2%", "-85%"]);
   
     return (
-      <section ref={targetRef} className="relative h-[300vh] bg-neutral-900">
+      <section ref={targetRef} className="relative h-[200vh] bg-neutral-200 dark:bg-neutral-900">
         <div className="sticky top-0 flex h-screen items-center overflow-hidden">
           <motion.div style={{ x }} className="flex gap-4">
             {cards.map((card) => {

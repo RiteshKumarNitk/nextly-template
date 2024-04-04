@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <>
 
-<div className="container h-85 mx-auto flex flex-col lg:flex-row items-center justify-center py-10">
+<div className="container h-85 mx-auto flex flex-col lg:flex-row items-center justify-between py-10">
   <div className="lg:w-1/2 lg:pr-8">
     <div className="max-w-3xl mb-8">
       <motion.h1 animate={{ x: 0 }}
@@ -58,7 +58,7 @@ const Hero = () => {
       <motion.div
         initial={{ opacity: 0, scale: 0.5, x: -100 }}
         animate={{ opacity: 1, scale: 1, x: 0 }}
-        transition={{ duration: 0.2 }}
+        transition={{ duration: 0.4 }}
         className="w-full h-full overflow-hidden rounded-full"
       >
         <Image

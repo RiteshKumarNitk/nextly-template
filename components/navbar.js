@@ -24,7 +24,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="w-full sticky top-0 flex mx-auto bg-black shadow-md">
+    <div className="w-full sticky top-0 flex mx-auto shadow-md bg-white dark:bg-slate-700 z-50">
       <nav className="navbar container relative flex flex-wrap items-center justify-between p-5 mx-auto lg:justify-between xl:px-0">
         {/* Logo */}
         <Disclosure>
@@ -32,23 +32,23 @@ const Navbar = () => {
             <>
               <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
                 <Link href="/">
-                  <span className="flex items-center space-x-2 text-2xl font-medium text-white-500">
+                  <span className="flex items-center space-x-2 text-2xl font-medium">
                     <span>
                       <Image
-                        src="/img/logo11org.png"
+                        src="/img/logo.png"
                         alt="N"
                         width="32"
                         height="32"
                         className="w-10"
                       />
                     </span>
-                    <span>Detroit</span>
+                    <span className="text-gray-800 dark:text-white">Detroit</span>
                   </span>
                 </Link>
 
                 <Disclosure.Button
                   aria-label="Toggle Menu"
-                  className="px-2 py-1 ml-auto text-white rounded-md lg:hidden hover:text-orange-500  focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700"
+                  className="px-2 py-1 ml-auto text-gray-800 dark:text-white rounded-md lg:hidden hover:text-orange-500 focus:outline-none"
                 >
                   <svg
                     className="w-6 h-6 fill-current"
@@ -76,7 +76,7 @@ const Navbar = () => {
                       key={index}
                       href={item.path}
                       passHref
-                      className="w-full px-4 py-2 -ml-4 text-white rounded-md  hover:text-orange-500 focus:text-orange-500  focus:outline-none"
+                      className="w-full px-4 py-2 -ml-4 text-gray-800 dark:text-white rounded-md hover:text-orange-500 focus:text-orange-500 focus:outline-none"
                     >
                       {item.label}
                     </Link>
@@ -84,7 +84,7 @@ const Navbar = () => {
                   <Link
                     href="/"
                     passHref
-                    className="w-full px-6 py-2 mt-3 text-center  lg:ml-5 border border-white  rounded-full md:ml-5"
+                    className="w-full px-6 py-2 mt-3 text-center lg:ml-5 border border-gray-800  dark:border-white rounded-full md:ml-5 text-gray-800 dark:text-white hover:bg-orange-500 hover:text-white"
                   >
                     Talk To us
                   </Link>
@@ -102,8 +102,8 @@ const Navbar = () => {
                 <button
                   onClick={() => router.push(item.path)}
                   className={`${
-                    activeTab === item.path ? "" : "hover:text-white/60"
-                  } relative rounded-full px-3 py-1.5 text-sm font-medium text-white outline-sky-400 transition focus-visible:outline-2`}
+                    activeTab === item.path ? "" : "hover:text-gray-800"
+                  } relative rounded-full px-3 py-1.5 text-sm font-medium text-gray-800 dark:text-white outline-sky-400 transition focus-visible:outline-2`}
                   style={{
                     WebkitTapHighlightColor: "transparent",
                   }}
@@ -111,8 +111,8 @@ const Navbar = () => {
                   {activeTab === item.path && (
                     <motion.span
                       layoutId="bubble"
-                      className="absolute inset-0 z-10 bg-white mix-blend-difference"
-                      style={{ borderRadius: 9999 }}
+                      className="absolute inset-0 z-10 bg-black dark:text-slate-500 dark:bg-white mix-blend-difference"
+                      style={{ borderRadius: 9999  }}
                       transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                     />
                   )}
@@ -128,9 +128,9 @@ const Navbar = () => {
           <Link
             href="/"
             passHref
-            className="px-6 py-2 border border-white text-white rounded-md md:ml-5 transition-all duration-300 ease-in-out hover:bg-orange-500 hover:text-white hover:border-orange-600"
+            className="px-6 py-2 border border-gray-800 dark:border-white text-gray-800 dark:text-white rounded-md md:ml-5 transition-all duration-300 ease-in-out hover:bg-orange-500 hover:text-white hover:border-orange-600"
           >
-            talk to us
+            Talk to us
           </Link>
           <ThemeChanger />
         </div>
