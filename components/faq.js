@@ -1,57 +1,61 @@
+"use client"
 import React from "react";
-import Container from "./container";
-import { Disclosure } from "@headlessui/react";
-import { ChevronUpIcon } from "@heroicons/react/24/solid";
+
 
 const Faq = () => {
   return (
-    <Container className="!p-0">
-      <div className="w-full max-w-2xl p-2 mx-auto rounded-2xl">
-        {faqdata.map((item, index) => (
-          <div key={item.question} className="mb-5">
-            <Disclosure>
-              {({ open }) => (
-                <>
-                  <Disclosure.Button className="flex items-center justify-between w-full px-4 py-4 text-lg text-left text-gray-800 rounded-lg bg-gray-50 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-100 focus-visible:ring-opacity-75 dark:bg-trueGray-800 dark:text-gray-200">
-                    <span>{item.question}</span>
-                    <ChevronUpIcon
-                      className={`${
-                        open ? "transform rotate-180" : ""
-                      } w-5 h-5 text-indigo-500`}
-                    />
-                  </Disclosure.Button>
-                  <Disclosure.Panel className="px-4 pt-4 pb-2 text-gray-500 dark:text-gray-300">
-                    {item.answer}
-                  </Disclosure.Panel>
-                </>
-              )}
-            </Disclosure>
+    <div className="container my-24 mx-auto md:px-6">
+      <section className="mb-32">
+        <div className="container mx-auto text-center lg:text-left xl:px-32">
+          <div className="flex grid items-center lg:grid-cols-2">
+            <div className="mb-12 lg:mb-0">
+              <div
+                className="block rounded-lg bg-[hsla(0,0%,100%,0.55)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 md:px-12 lg:-mr-14 backdrop-blur-[30px]">
+                <h3 className="mb-3 text-2xl font-bold">
+                  We know how valuable your time is
+                </h3>
+                <h5 className="mb-12 text-lg font-bold text-primary dark:text-primary-400 lg:mb-10 xl:mb-12">
+                  Let us answer your questions
+                </h5>
+    
+                <p className="mb-4 font-bold">
+                  Anim pariatur cliche reprehenderit?
+                </p>
+                <p className="mb-6 text-gray-500 dark:text-neutral-300">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
+                  autem numquam dolore molestias aperiam 
+                </p>
+    
+                <p className="mb-4 font-bold">
+                  Non cupidatat skateboard dolor brunch?
+                </p>
+                <p className="mb-6 text-gray-500 dark:text-neutral-300">
+                  Distinctio corporis, iure facere ducimus quos consectetur ipsa
+                  ut magnam autem doloremque ex! Id, sequi. Voluptatum magnam
+                  sed fugit iusto minus et suscipit?
+                </p>
+    
+                <p className="mb-4 font-bold">
+                  Praesentium voluptatibus temporibus consequatur non
+                  aspernatur?
+                </p>
+                <p className="text-gray-500 dark:text-neutral-300">
+                  Minima sunt at nulla tenetur, numquam unde quod modi magnam ab
+                  deserunt ipsam sint aliquid dolores 
+                </p>
+              </div>
+            </div>
+    
+            <div>
+              <img src="https://mdbcdn.b-cdn.net/img/new/ecommerce/vertical/075.jpg"
+                className="w-full rounded-lg shadow-lg dark:shadow-black/20" alt="" />
+            </div>
           </div>
-        ))}
-      </div>
-    </Container>
+        </div>
+      </section>
+    </div>
   );
 }
 
-const faqdata = [
-  {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
-  },
-  {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this you can.",
-  },
-  {
-    question: "What is your refund policy? ",
-    answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
-  },
-  {
-    question: "Do you offer technical support? ",
-    answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
-  },
-];
 
 export default Faq;

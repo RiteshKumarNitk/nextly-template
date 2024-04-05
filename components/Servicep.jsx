@@ -1,11 +1,13 @@
+"use client"
+
 import React from "react";
 
 const Servicep = () => {
   return (
-    <section className="pb-12 pt-20 dark:bg-dark lg:pb-90px lg:pt-120px">
+    <section className="pb-12 pt-20 container grid px-6 md:px-12   dark:bg-dark lg:pb-90px lg:pt-120px">
       <div className="container mx-auto">
         <div className="mx-auto mb-12 max-w-510px text-center lg:mb-20">
-          <span className="mb-2 block text-lg font-semibold text-primary">
+          <span className="text-sm font-bold tracking-wider text-orange-600 uppercase ">
             Our Services
           </span>
           <h2 className="mb-3 text-3xl font-bold leading-1.2 text-dark dark:text-white sm:text-4xl md:text-40px">

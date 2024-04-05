@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -22,15 +23,20 @@ const Portfolio = () => {
     <div>
       <section className="bg-gray-100 dark:bg-gray-900 antialiased">
         <div className="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white">
-              Our work
-            </h2>
-            <p className="mt-4 text-base font-normal text-gray-500 sm:text-xl dark:text-gray-400">
-              Crafted with skill and care to help our clients grow their
+        <div className="mx-auto mb-12 max-w-510px text-center lg:mb-20">
+          <span className="mb-2 block text-lg font-semibold text-primary">
+          Our work
+          </span>
+          <h2 className="mb-3 text-3xl font-bold leading-1.2 text-dark dark:text-white sm:text-4xl md:text-40px">
+          grow your
               business!
-            </p>
-          </div>
+          </h2>
+          <p className="text-base text-body-color dark:text-dark-6">
+          Crafted with skill and care to help our clients grow their
+              business!
+          </p>
+        </div>
+         
 
           <div className="flex justify-center mt-12 text-center  sm:mt-16 gap-x-20 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
             <ImageGallery

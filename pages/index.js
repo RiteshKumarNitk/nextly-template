@@ -19,6 +19,7 @@ import Pricing from "../components/Pricing";
 import ShuffleHero from "../components/ShuffleHero";
 import Portfolio from "../components/Portfolio";
 import Contact from "../components/Contact";
+import FancyTestimonialsSlider from "../components/FancyTestimonialsSlider";
 const Home = () => {
   return (
     <>
@@ -61,7 +62,9 @@ const Home = () => {
       </SectionTitle> */}
       <Scroller />
       {/* <Video /> */}
-      {/* <SectionTitle
+      <FancyTestimonialsSlider/>
+
+      <SectionTitle
         pretitle="Testimonials"
         title="Here's what our clients say about Detroit Consultancy"
       >
@@ -72,7 +75,7 @@ const Home = () => {
       <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
         Answer your customers' possible questions here; it will increase the
         conversion rate as well as support or chat requests.
-      </SectionTitle> */}
+      </SectionTitle>
       <Pricing/>
 
       <ShuffleHero/>
