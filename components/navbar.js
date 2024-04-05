@@ -77,7 +77,7 @@ const Navbar = () => {
                       key={index}
                       href={item.path}
                       passHref
-                      className="w-full px-4 py-2 -ml-4 text-gray-800 dark:text-white rounded-md hover:text-orange-500 focus:text-orange-500 focus:outline-none"
+                      className="w-full px-4 py-2 -ml-4 text-gray-800 dark:text-white rounded-md hover:text-orange-600 focus:text-orange-500 focus:outline-none"
                     >
                       {item.label}
                     </Link>
@@ -85,7 +85,7 @@ const Navbar = () => {
                   <Link
                     href="/"
                     passHref
-                    className="w-full px-6 py-2 mt-3 text-center lg:ml-5 border border-gray-800  dark:border-white rounded-full md:ml-5 text-gray-800 dark:text-white hover:bg-orange-500 hover:text-white"
+                    className="w-full px-6 py-2 mt-3 text-center lg:ml-5 border border-gray-800 rounded-full md:ml-5 text-gray-800 dark:text-white hover:bg-orange-400 hover:text-white"
                   >
                     Talk To us
                   </Link>

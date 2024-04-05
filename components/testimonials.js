@@ -60,7 +60,7 @@ const Testimonials  = () => {
 
 function Avatar(props) {
   return (
-    <div className="flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]">
+    <div className="flex justify-center  relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent  backdrop-blur-lg backdrop-saturate-[1.8]">
       <div className="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
         <Image
           src={props.image}
@@ -70,7 +70,7 @@ function Avatar(props) {
           placeholder="blur"
         />
       </div>
-      <div>
+      <div className="">
         <div className="text-lg font-medium">{props.name}</div>
         <div className="text-gray-600 dark:text-gray-400">{props.title}</div>
       </div>
@@ -83,7 +83,7 @@ function Mark(props) {
   return (
     <>
       {" "}
-      <mark className="text-orange-800 bg-indigo-100 rounded-md ring-indigo-100 ring-4 dark:ring-orange-900 dark:bg-orange-900 dark:text-indigo-200">
+      <mark className="text-orange-500 bg-indigo-100 rounded-md ring-indigo-100 ring-4 dark:ring-orange-900 dark:bg-orange-900 dark:text-indigo-200">
         {props.children}
       </mark>{" "}
     </>

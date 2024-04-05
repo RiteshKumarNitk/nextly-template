@@ -53,18 +53,18 @@ const Hero = () => {
         </div>
 
         <div className="lg:w-1/3 flex justify-center lg:justify-end ">
-          <div className="rounded-full bg-[#202020] dark:bg-slate-300 w-full lg:w-95 h-95 lg:h-100 shadow-lg">
+          <div className=" bg-[#202020] rounded-xl dark:bg-slate-300 w-full lg:w-95 h-95 lg:h-100 shadow-lg">
             <motion.div
               initial={{ opacity: 0, scale: 0.5, x: -100 }}
               animate={{ opacity: 1, scale: 1, x: 0 }}
               transition={{ duration: 0.4 }}
-              className="w-full h-full overflow-hidden rounded-full"
+              className="w-full h-full  "
             >
               <Image
                 src={heroImg}
                 width="616"
                 height="616"
-                className={"object-cover "}
+                className={" "}
                 alt="Hero Illustration"
                 loading="eager"
                 placeholder="blur"
@@ -77,7 +77,7 @@ const Hero = () => {
       <Container>
         <div className="flex flex-col justify-center">
           <div className="text-xl text-center text-gray-700 dark:text-white">
-            Trusted by <span className="text-indigo-600">2000+</span> customers
+            Trusted by <span className="text-orange-400">2000+</span> customers
             worldwide
           </div>
 
