@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import Image from "next/image";
@@ -24,7 +25,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="w-full sticky top-0 flex mx-auto shadow-md bg-white dark:bg-slate-700 z-50">
+    <div className="w-full sticky top-0 flex mx-auto bg-stone-200 dark:bg-stone-800  z-50 bg-[hsla(0,0%,100%,0.8)] px-6  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 backdrop-blur-[30px]">
       <nav className="navbar container relative flex flex-wrap items-center justify-between p-5 mx-auto lg:justify-between xl:px-0">
         {/* Logo */}
         <Disclosure>
@@ -42,7 +43,7 @@ const Navbar = () => {
                         className="w-10"
                       />
                     </span>
-                    <span className="text-gray-800 dark:text-white">Detroit</span>
+                    <span className="  text-gray-800 dark:text-white">Detroit</span>
                   </span>
                 </Link>
 
@@ -102,7 +103,7 @@ const Navbar = () => {
                 <button
                   onClick={() => router.push(item.path)}
                   className={`${
-                    activeTab === item.path ? "" : "hover:text-gray-800"
+                    activeTab === item.path ? "" : "hover:text-gray-800 dark:hover:text-white"
                   } relative rounded-full px-3 py-1.5 text-sm font-medium text-gray-800 dark:text-white outline-sky-400 transition focus-visible:outline-2`}
                   style={{
                     WebkitTapHighlightColor: "transparent",
@@ -111,7 +112,7 @@ const Navbar = () => {
                   {activeTab === item.path && (
                     <motion.span
                       layoutId="bubble"
-                      className="absolute inset-0 z-10 bg-black dark:text-slate-500 dark:bg-white mix-blend-difference"
+                      className="absolute inset-0 z-10 bg-white dark:text-slate-500 dark:bg-white mix-blend-difference"
                       style={{ borderRadius: 9999  }}
                       transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                     />

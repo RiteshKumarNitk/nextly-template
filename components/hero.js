@@ -1,80 +1,78 @@
+"use client"
 import Image from "next/image";
 import Container from "./container";
 import heroImg from "../public/img/tower.png";
 import { motion } from "framer-motion";
 import { BsTelephone } from "react-icons/bs";
 const Hero = () => {
-
-
-  
   return (
     <>
+      <div className="container px-4 h-85 mx-auto flex flex-col lg:flex-row items-center justify-between py-10">
+        <div className="lg:w-1/2 lg:pr-8">
+          <div className="max-w-3xl mb-8">
+            <motion.h1
+              animate={{ x: 0 }}
+              className="text-4xl lg:text-6xl font-bold leading-snug tracking-tight text-gray-800 dark:text-white"
+            >
+              A BIG transformation with a{" "}
+              <span className="font-extralight">SMALL</span> initiative.
+            </motion.h1>
+            <motion.p
+              animate={{ x: 0 }}
+              className="text-2xl lg:text-3xl mt-2 lg:mt-4 leading-normal text-center lg:text-left text-gray"
+            >
+              “Check the power of our inspection"
+            </motion.p>
+            <motion.p
+              animate={{ x: 0 }}
+              className="text-lg lg:text-xl mt-2 lg:mt-4 leading-normal md:text-center lg:text-right text-gray-300"
+            >
+              Ensure your compliance readiness with Detroit’s expert
+              verification services.
+            </motion.p>
+            <motion.p
+              animate={{ x: 0 }}
+              className="text-lg lg:text-xl leading-normal lg:text-right text-gray-500"
+            >
+              Our comprehensive assessment, scoring, and personalized reporting
+              ensure your peace of mind—all at an unbeatable price.
+            </motion.p>
+            <motion.div
+              animate={{ x: 0 }}
+              className="flex items-center mt-4 justify-start lg:justify-end"
+            >
+              <a
+                href="#"
+                class="flex items-center  bg-teal-100 hover:bg-white text-teal-800 rounded-full py-3 px-8 shadow-md hover:shadow-2xl transition duration-500"
+              >
+                <BsTelephone className="h-6 w-6 mr-2" />
+                Register Now
+              </a>
+            </motion.div>
+          </div>
+        </div>
 
-<div className="container h-85 mx-auto flex flex-col lg:flex-row items-center justify-between py-10">
-  <div className="lg:w-1/2 lg:pr-8">
-    <div className="max-w-3xl mb-8">
-      <motion.h1 animate={{ x: 0 }}
-        className="text-4xl lg:text-6xl font-bold leading-snug tracking-tight text-gray-800 dark:text-white">
-        A BIG transformation with a{" "}
-        <span className="font-extralight">SMALL</span> initiative.
-      </motion.h1>
-      <motion.p
-        animate={{ x: 0 }}
-        className="text-2xl lg:text-3xl mt-2 lg:mt-4 leading-normal text-center lg:text-left text-gray"
-      >
-        “Check the power of our inspection"
-      </motion.p>
-      <motion.p
-        animate={{ x: 0 }}
-        className="text-lg lg:text-xl mt-2 lg:mt-4 leading-normal md:text-center lg:text-right text-gray-300"
-      >
-        Ensure your compliance readiness with Detroit’s expert
-        verification services.
-      </motion.p>
-      <motion.p
-        animate={{ x: 0 }}
-        className="text-lg lg:text-xl leading-normal lg:text-right text-gray-500"
-      >
-        Our comprehensive assessment, scoring, and personalized reporting
-        ensure your peace of mind—all at an unbeatable price.
-      </motion.p>
-      <motion.div
-        animate={{ x: 0 }}
-        className="flex items-center mt-4 justify-start lg:justify-end"
-      >
-        <a
-          href="#"
-          class="flex items-center  bg-teal-100 hover:bg-white text-teal-800 rounded-full py-3 px-8 shadow-md hover:shadow-2xl transition duration-500"
-        >
-          <BsTelephone className="h-6 w-6 mr-2" />
-          Register Now
-        </a>
-      </motion.div>
-    </div>
-  </div>
-
-  <div className="lg:w-1/3 flex justify-center lg:justify-end ">
-    <div className="rounded-full bg-[#202020] dark:bg-slate-300 w-full lg:w-95 h-95 lg:h-100 shadow-lg">
-      <motion.div
-        initial={{ opacity: 0, scale: 0.5, x: -100 }}
-        animate={{ opacity: 1, scale: 1, x: 0 }}
-        transition={{ duration: 0.4 }}
-        className="w-full h-full overflow-hidden rounded-full"
-      >
-        <Image
-          src={heroImg}
-          width="616"
-          height="616"
-          className={"object-cover "}
-          alt="Hero Illustration"
-          loading="eager"
-          placeholder="blur"
-        />
-      </motion.div>
-    </div>
-  </div>
-</div>
-
+        <div className="lg:w-1/3 flex justify-center lg:justify-end ">
+          <div className="rounded-full bg-[#202020] dark:bg-slate-300 w-full lg:w-95 h-95 lg:h-100 shadow-lg">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5, x: -100 }}
+              animate={{ opacity: 1, scale: 1, x: 0 }}
+              transition={{ duration: 0.4 }}
+              className="w-full h-full overflow-hidden rounded-full"
+            >
+              <Image
+                src={heroImg}
+                width="616"
+                height="616"
+                className={"object-cover "}
+                alt="Hero Illustration"
+                loading="eager"
+                placeholder="blur"
+              />
+            </motion.div>
+          </div>
+        </div>
+      </div>
 
       <Container>
         <div className="flex flex-col justify-center">
@@ -105,8 +103,6 @@ const Hero = () => {
     </>
   );
 };
-
-
 
 function AmazonLogo() {
   return (

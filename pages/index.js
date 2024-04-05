@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Hero from "../components/hero";
-import Content from "../components/Content";
+
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
 
@@ -18,7 +18,7 @@ import Servicep from "../components/Servicep";
 import Pricing from "../components/Pricing";
 import ShuffleHero from "../components/ShuffleHero";
 import Portfolio from "../components/Portfolio";
-import Contact from "../components/Contact";
+import Contact from "../components/contact";
 const Home = () => {
   return (
     <>
@@ -77,8 +77,8 @@ const Home = () => {
 
       <ShuffleHero/>
       <Portfolio/>
-      <Faq />
       <Contact/>
+      <Faq />
       <Cta />
       <Footer />
       <PopupWidget />
