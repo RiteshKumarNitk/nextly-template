@@ -10,8 +10,20 @@ const Contact = () => {
   };
   return (
     <>
-      <div className="container my-24 mx-auto md:px-6">
-        <section className="mb-32">
+      <div className="container my-24 dark:bg-stone-800 bg-gray-100  md:px-6 max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
+      <div className="mx-auto mb-12 max-w-510px text-center lg:mb-20">
+            <span className="text-sm font-bold tracking-wider text-orange-600 uppercase ">
+              Our work
+            </span>
+            <h2 className="mb-3 text-3xl font-bold leading-1.2 text-dark dark:text-white sm:text-4xl md:text-40px">
+              grow your business!
+            </h2>
+            <p className="text-base  py-4 text-center leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
+              Crafted with skill and care to help our clients grow their
+              business!
+            </p>
+          </div>
+        <section className=" mb-32 container mx-auto">
           <div className="relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat bg-[url('https://mdbcdn.b-cdn.net/img/new/textures/full/284.jpg')]"></div>
           <div className="container px-6 md:px-12">
             <div className="block rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px]">

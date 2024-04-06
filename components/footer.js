@@ -19,13 +19,18 @@ export default function Footer() {
                 href="/"
                 className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100"
               >
-                <Image
-                  src="/img/logo11org.webp"
-                  alt="N"
-                  width="65"
-                  height="65"
-                  className="w-16"
-                />
+              <span className="flex items-center space-x-2 text-2xl font-medium">
+                    <span>
+                      <Image
+                        src="/img/logo.png"
+                        alt="N"
+                        width="32"
+                        height="32"
+                        className="w-10"
+                      />
+                    </span>
+                    <span className="  text-gray-800 dark:text-white">Detroit</span>
+                  </span>
               </Link>
             </div>
 

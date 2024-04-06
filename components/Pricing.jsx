@@ -3,8 +3,8 @@ import React from "react";
 
 const Pricing = () => {
   return (
-    <div className="container my-24 mx-auto md:px-6">
-      <section className="mb-32">
+    <div className="container  mx-auto md:px-6">
+      <section className="">
         <div className="text-center text-white lg:h-400 h-300 lg:pt-80 pt-55 bg-gradient-to-r from-red-500 to-yellow-500">
           <h2 className="mb-12 text-center text-3xl font-bold text-black">Pricing</h2>
         </div>

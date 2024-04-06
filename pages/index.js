@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Hero from "../components/hero";
-import Content from "../components/Content";
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
 
@@ -25,12 +24,11 @@ const Home = () => {
     <>
       <Head>
         <title>
-          Welcome to Innovatex Technology Pvt Ltd, where innovation meets
-          technology to transform businesses.
+          Welcome 
         </title>
         <meta
           name="description"
-          content="Welcome to Innovatex Technology Pvt Ltd, where innovation meets technology to transform businesses."
+          content="Welcome "
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -45,7 +43,7 @@ const Home = () => {
         pretitle="Leading Management Consultancy In India"
         title="Unlock Growth with DETROIT CONSULTANCY"
       >
-        Innovatex Technology Pvt Ltd provides tailored software development,
+        
         top-tier talent access, and strategic digital marketing solutions for
         growth. Partner with us for success and support beyond project
         completion.
@@ -62,7 +60,7 @@ const Home = () => {
       </SectionTitle> */}
       <Scroller />
       {/* <Video /> */}
-      <FancyTestimonialsSlider/>
+      {/* <FancyTestimonialsSlider/> */}
 
       <SectionTitle
         pretitle="Testimonials"
@@ -73,7 +71,7 @@ const Home = () => {
       </SectionTitle>
       <Testimonials />
       <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers' possible questions here; it will increase the
+        Answer your s here; it will increase the
         conversion rate as well as support or chat requests.
       </SectionTitle>
       <Pricing/>

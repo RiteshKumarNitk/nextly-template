@@ -4,7 +4,7 @@ import React from "react";
 
 const Servicep = () => {
   return (
-    <section className="pb-12 pt-20 container grid px-6 md:px-12   dark:bg-dark lg:pb-90px lg:pt-120px">
+    <section className="container p-8 mx-auto xl:px-0 flex w-full flex-col mt-8 items-center justify-center text-center">
       <div className="container mx-auto">
         <div className="mx-auto mb-12 max-w-510px text-center lg:mb-20">
           <span className="text-sm font-bold tracking-wider text-orange-600 uppercase ">
@@ -13,7 +13,7 @@ const Servicep = () => {
           <h2 className="mb-3 text-3xl font-bold leading-1.2 text-dark dark:text-white sm:text-4xl md:text-40px">
             What We Offer
           </h2>
-          <p className="text-base text-body-color dark:text-dark-6">
+          <p className="text-base  py-4 text-center leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
             Growth based services
           </p>
         </div>

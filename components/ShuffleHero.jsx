@@ -1,27 +1,41 @@
-"use client"
+"use client";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 const ShuffleHero = () => {
   return (
-    <section className="w-full px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto">
-      <div>
-        <span className="block mb-4 md:text-sm  text-sm font-bold tracking-wider text-orange-600 uppercase">
-          Better every day
+    <div className="container  my-55 md:px-6 max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
+      <div className="mx-auto  max-w-510px text-center ">
+        <span className="text-sm font-bold tracking-wider text-orange-600 uppercase ">
+          Our work
         </span>
-        <h3 className="text-4xl md:text-6xl font-semibold">
-          Let's change it up a bit
-        </h3>
-        <p className="text-base md:text-lg text-slate-700 my-4 md:my-6">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam nobis in
-          error repellat voluptatibus ad.
+        <h2 className="mb-3 text-3xl font-bold leading-1.2 text-dark dark:text-white sm:text-4xl md:text-40px">
+          grow your business!
+        </h2>
+        <p className="text-base  py-4 text-center leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
+          Crafted with skill and care to help our clients grow their business!
         </p>
-        <button className="bg-orange-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-orange-600 active:scale-95">
-          Find a class
-        </button>
       </div>
-      <ShuffleGrid />
-    </section>
+      <section className="w-full grid grid-cols-1 md:grid-cols-2 items-center gap-8  container  my-55 md:px-6 max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
+       
+        <div>
+          <span className="block mb-4 md:text-sm  text-sm font-bold tracking-wider text-orange-600 uppercase">
+            Better every day
+          </span>
+          <h3 className="text-4xl md:text-6xl font-semibold">
+            Let's change it up a bit
+          </h3>
+          <p className=" py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam nobis
+            in error repellat voluptatibus ad.
+          </p>
+          <button className="bg-orange-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-orange-600 active:scale-95">
+            Find a class
+          </button>
+        </div>
+        <ShuffleGrid />
+      </section>
+    </div>
   );
 };
 
